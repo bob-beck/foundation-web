@@ -1,0 +1,9 @@
+This directory contains OpenBSD Foundation financials for FY 2012.
+
+Supporting documents include: 
+
+"CIBC-2012.jpg" an image of the full year bank statments for the
+foundation's CIBC bank account. This has been manually redacted to
+remove donor information. We can not make the original statements
+public as they contain private identifying details of anonymous
+donors.

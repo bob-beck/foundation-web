@@ -1,0 +1,27 @@
+Dec 31, 2014	The OpenBSD Foundation
+
+Balance Sheet
+
+Assets:
+
+Cash (CIBC 91-13711)			$160379.92
+Cash (Paypal - CDN)			 $13212.05
+Cash (Paypal - Other Currencies[1])     $126084.98
+--------------------------------
+Total Assets:			        $299676.95
+
+
+Liabilities: 
+Allstream Inc, 2014 invoice [2]	$22,000
+---------------------------------
+Total Liabilities		$22,000
+
+
+[1] Other currencies include USD(67337.10) and EUR(34169.55), converted using
+the Bank of Canada Dec 31 2014 noon time rates of 1.1601 for USD and 1.4038 
+for EUR. 
+
+[2] The details of paying this invoice and the precise amount is still being
+worked out with Allstream. 
+
+

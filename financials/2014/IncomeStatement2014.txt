@@ -1,0 +1,47 @@
+Dec 31, 2014	The OpenBSD Foundation
+
+Income Statement, For Year ended Dec 31 2014
+
+Revenues:
+ Donations Received(CIBC)	$179938.42
+ Donations Received(Paypal)	$217492.57
+--------------------------------------
+	Total Revenue:		$397430.99
+
+Expenses:
+ Bank fees (CIBC)	        $   121.88
+ Paypal Reversals		$  4303.59
+-----------------------------------------
+
+Hackathons:
+ b2k13 hackathon - berlin	$  5417.70
+ n2k14 hackathon - new zealand  $  3487.47 
+ m2k14 hackathon - morocco	$  6479.14
+ g2k14 hackathon - slovenia	$ 13797.23
+
+Electrical
+ 2013 Electrical costs          $ 14019.35
+ 2014 Electrical (to sept)	$ 11063.29
+
+Infrastructure and Developer Gear:
+ Infrastructure                 $  1980.19
+ UPS replacement		$  8248.46
+ Video Upgrade			$  2452.61
+ PDU's				$  2337.20
+ Ports Infrastructure machine	$   918.98
+ Infrastructure			$   594.06
+ 10 gig transcievers		$  1642.37
+ Mirror Infrastructure		$  3200.27
+ Developer HW	  		$  2292.76
+ Used Computer HW (from Paypal) $ 24834.22
+
+Networking:
+ ARIN (networking)		$   219.35
+ Infrastructure (wireless)	$  5299.94
+ Wireless Shot gear		$  8333.52
+ Networking (cybera)            $  1050.00
+ Networking (Caisnet)           $  7068.60
+
+---------------------------------------
+	Total Expenses:		$129344.18 
+	Net Income:	        $268086.81

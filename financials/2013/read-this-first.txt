@@ -1,0 +1,14 @@
+This directory contains OpenBSD Foundation financials for FY 2013. 
+
+Supporting Documents include: 
+
+"paypal2013.txt" is a version of the paypal csv/pdf account documents
+which which were obtained directly from paypal. We can not make the
+original paypal documents public as they contain private identifying
+details of anonymous donors.
+
+"CIBC-2013-X.jpg" are images of the full year bank statments for the
+foundation's CIBC bank account. They has been manually redacted to
+remove donor information. We can not make the original statements
+public as they contain private identifying details of anonymous
+donors.

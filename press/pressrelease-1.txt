@@ -1,0 +1,34 @@
+FOR IMMEDIATE RELEASE
+
+From: The OpenBSD Foundation
+Contact: directors@openbsdfoundation.org
+Date: January 4, 2008
+
+THE OPENBSD FOUNDATION ANNOUNCES FIRST CORPORATE DONATIONS
+
+The OpenBSD Foundation is privileged to announce the receipt of
+its first corporate cash donations.
+
+The very first donation was received from Norwegian network engineers
+SystemNet AS.
+
+This was followed very shortly by several significant anonymous
+donations, as well as contributions from Hewlett Packard and Google.
+
+Many thanks to our corporate donors.
+
+All donations were received soon after the Foundation announced its
+existance, enabling the Foundation to start operations and perfect
+its donation handling.  These donations have enabled the Foundation
+to assume the costs of OpenBSD's networking expenses, and begin to
+acquire several key pieces of hardware for development and infrastucture. 
+
+The OpenBSD Foundation is a Canadian federally incorporated not-for-profit
+corporation dedicated to the support of OpenBSD and related projects.
+For more details please visit our website at www.openbsdfoundation.org.
+
+Corporations and other organizations wishing to support OpenBSD with
+donations of money or equipment can contact the directors of the
+Foundation at directors@openbsdfoundation.org.
+
+-30-

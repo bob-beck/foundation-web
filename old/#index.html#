@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+    <title>The OpenBSD Foundation</title>
+    <meta name="resource-type" content="document">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <meta name="description" content="The OpenBSD Foundation Web Site">
+    <meta name="keywords" content="openbsd, openssh, funding, unix, free, foundation, donations ,main">
+    <meta name="distribution" content="global">
+		<meta name="copyright" content="This document copyright 2007 The OpenBSD Foundation">
+</head>
+<body text="#000000" bgcolor="#ffffff">
+<table width="100%" border="0" cellspacing="0" cellpadding="4">
+<tr>
+<!--    <td bgcolor="#ffcc00" rowspan="2">&nbsp;</td>  -->
+    <td bgcolor="#6bbdd6" rowspan="2" valign=top>
+<big><b>Information</b></big><br>
+<P>
+&nbsp;<a href="foundation/bylaws.html">Our&nbsp;Bylaws</a><br>
+&nbsp;<a href="donations.html">Donations</a><br>
+&nbsp;<a href="activities.html">Activities</a>
+&nbsp;<a href="press.html">Press</a><br>
+&nbsp;<a href="membership.html">Membership</a><br>
+<p>
+    </td>
+    <td bgcolor="#007b9c" rowspan="2">&nbsp;</td>
+    <td bgcolor="#ffffff" valign="top"><center>
+	<img border="0" src="images/blowfish-notext.jpg" height=167 width=198 alt="[OpenBSD Foundation Graphic]" ></center>
+<br>
+<center><strong>
+Welcome to the OpenBSD Foundation.<br>
+</strong></center>
+<p>
+The OpenBSD Foundation is a <a href="http://en.wikipedia.org/wiki/Non-profit_organization#Canada">Canadian not-for-profit corporation</a> which exists to support <a href="http://www.openbsd.org">OpenBSD</a> and related projects such as <a href="http://www.openssh.com">OpenSSH</a>,
+<a href="http://www.openbgpd.org">OpenBGPD</a>,
+<a href="http://www.openntpd.org">OpenNTPD</a>,
+and
+<a href="http://www.opencvs.org">OpenCVS</a>. While the foundation works in close cooperation with the developers of these wonderful free software projects, it is a separate entity. 
+
+<p> Formally, the corporation's objects are to support and further the development, 
+advancement, and maintenance of <a href="http://www.openbsd.org/policy.html">free software</a> based on the <a href="http://www.openbsd.org/">OpenBSD operating system</a>, including the operating system itself and related free
+software projects.
+<p> The foundation will issue receipts for all contributions, and may participate
+in press release activity relating to contributions from corporate sponsors.
+<p>
+<p> To make a contribution to the foundation, please see the details on our
+<a href="donations.html">donations page</a>, or contact our directors at
+<a href="mailto:directors@openbsdfoundation.org"> directors@openbsdfoundation.org</a>
+</td>
+</tr>
+<tr>
+    <td bgcolor="#ffffff" valign="bottom">
+    <table border=0 width="100%"><tr>
+    <td>
+<small>
+Projects We Support:
+<a href="http://www.openbsd.org">OpenBSD</a>,
+<a href="http://www.openssh.com">OpenSSH</a>,
+<a href="http://www.openbgpd.org">OpenBGPD</a>,
+<a href="http://www.openntpd.org">OpenNTPD</a>,
+<a href="http://www.opencvs.org">OpenCVS</a>
+</small>
+    <hr>
+<small>
+<em>This site Copyright &copy; 2007 The OpenBSD Foundation.</em><br>
+<br>
+</small>
+    </td><td valign="top" width=76>
+	<br>
+    </td>
+    </tr></table>
+</td></tr></table>
+</body>
+</html>

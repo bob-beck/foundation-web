@@ -1,0 +1,15 @@
+Dec 31, 2012	The OpenBSD Foundation
+
+Balance Sheet
+
+Assets:
+
+Cash (CIBC 91-13711) $33,846.66
+--------------------------------
+Total Assets:        $33,846.66
+
+
+Liabilities: 
+				$0
+---------------------------------
+Total Liabilities		$0

@@ -1,0 +1,25 @@
+Dec 31, 2013	The OpenBSD Foundation
+
+Income Statement, For Year ended Dec 31 2013
+
+Revenues:
+ Donations Received(CIBC)	$21,049.27
+ Donations Received(Paypal)[1]	$41,899.78 
+--------------------------------------
+	Total Revenue:		$62,949.05
+
+Expenses:
+ Bank fees (CIBC)	        $    84.22
+ Used Computers for Project     $  1317.12
+ Project Network Costs          $14,592.81
+ n2k13 hackathon	        $  9185.35
+ t2k13 hackathon     	        $  8491.64
+ Radeon/Intel KMS Developent
+ (Jonathan Gray)	        $21,243.74
+---------------------------------------
+	Total Expenses:		$54,914.88
+
+	Net Income:		  $8034.17
+
+[1] $32,000 of this income is donated from the "Old OpenBSD Paypal" account
+as it winds down, to the Foundation Paypal account. 

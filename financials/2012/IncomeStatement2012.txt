@@ -1,0 +1,22 @@
+Dec 31, 2012	The OpenBSD Foundation
+
+Income Statement, For Year ended Dec 31 2012
+
+Revenues:
+ Donations Received:		$19,851.00
+--------------------------------------
+	Total Revenue:		$19,851.00
+
+Expenses:
+ Bank fees (CIBC)	$    48.00
+ Cheques (CIBC)		$   142.13
+ Project Network Costs  $  6063.43
+ g2k12 hackathon	$16,071.63
+ c2k12 hackathon	$  1765.34
+ n2k12 hackathon	$  8273.18
+ r2k12 hackathon	$  8336.08
+ 
+---------------------------------------
+	Total Expenses:		$40,699.79
+
+	Net Income(Loss):	($20,848.79)

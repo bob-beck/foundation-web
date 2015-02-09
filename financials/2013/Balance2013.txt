@@ -1,0 +1,22 @@
+Dec 31, 2013	The OpenBSD Foundation
+
+Balance Sheet
+
+Assets:
+
+Cash (CIBC 91-13711)			$28,049.71
+Cash (Paypal - CDN)			  $9012.96
+Cash (Paypal - Other Currencies[1])	  $4416.93
+
+--------------------------------
+Total Assets:			        $41,479.60
+
+
+Liabilities: 
+				$0
+---------------------------------
+Total Liabilities		$0
+
+
+[1] Other currencies include USD and EUR, converted using the Bank of
+Canada yearly average rate for 2013. 
