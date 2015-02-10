@@ -101,15 +101,12 @@ organization for Google Summer of Code 2015.
 <LI><A href="#webkit2">Fix Webkit2 API on *BSD.</A>
 <LI><A href="#webrtc">Proper WebRTC integration in Mozilla.</A>
 <LI><A href="#pipex">Replace existing three PPP implementations with enhanced pipex.</A>
-<LI><A href="#bug-tracking">A bug tracking system that integrates with sendbug(1) and doesn't suck
-dead bunnies through bent straws.</A>
 <LI><A href="#ports-modules">Infrastructure for integrating OpenBSD Ports and module
 installation frameworks.</A>
 <LI><A href="#networkmanager">OS-agnostic NetworkManager analog.</A>
 <LI><A href="#accelerometer">Act on accelerometer input in laptop.</A>
 <LI><A href="#smtpd-milters">Add milters support in smtpd.</A>
 <LI><A href="#seccomp-bpf">Port Linux SECCOMP-bpf sandbox to OpenBSD.</A>
-<LI><A href="#pseudo-drivers">Better integration of pseudo-drivers in the network stack.</A>
 <LI><A href="#network-configuration-daemon">Design and implement network configuration daemon.</A>
 <LI><A href="#java">Java 8 on OpenBSD.</A>
 <LI><A href="#bfd">Implement BFD support as described in RFC 5880 and RFC 5881.</A>
@@ -461,39 +458,6 @@ TBD
 <HR></LI>
 
 
-<LI id="bug-tracking">
-<strong>Project:</strong>
-
-A bug tracking system that integrates with sendbug(1) and doesn't suck
-dead bunnies through bent straws.
-
-<P><strong>Brief explanation:</strong>
-
-OpenBSD bugs are sent in a formatted way to a public mailing list via
-the sendbug(1) utility. A long time ago we had gnats integration that
-would file these bugs and allow developers to track them and close them. 
-security issues with this code forced us to discontinue this practice. 
-
-A replacement would be nice, that was accessible to developers with a 
-simple interface but not hosted on the project's critical infrastructure, 
-and which took its input from sendbug in an intelligent way. 
-
-<P><strong>Expected results:</strong>
-
-A bug tracking system that integrates with sendbug(1) and only drives
-half the developers batsh**t crazy (with the other half willing to use
-it) would be a resounding success.
-
-<P><strong>Knowledge prerequisite:</strong>
-
-*secure* *simple* web applications, data integration, and an ability to keep things simple and appealing to geeks that just want the job done without
-dancing baloney.
-
-<P><strong>Mentor:</strong>
-TBD
-<HR></LI>
-
-
 <LI id="ports-modules">
 <strong>Project:</strong>
 
@@ -631,33 +595,6 @@ differences between platforms).
 <P><strong>Knowledge prerequisite:</strong>
 
 Familiarity with bpf(4), the Linux SECCOMP sandbox and/or the OpenBSD kernel.
-
-<P><strong>Mentor:</strong>
-TBD
-<HR></LI>
-
-
-<LI id="pseudo-drivers">
-<strong>Project:</strong>
-
-Better integration of pseudo-drivers in the network stack.
-
-<P><strong>Brief explanation:</strong>
-
-At lot if not all the network pseudo-drivers, carp(4),
-trunk(4), bridge(4), etc are integrated in OpenBSD's network stack using
-a lot of hackish #ifdef's which are not always justified, leading in some
-case to useless lookups or memcopys. This project would be to redesign/
-improve the integration of such drivers in the stack.
-
-<P><strong>Expected results:</strong>
-
-A set of patches to improve the current integration
-of such drivers.
-
-<P><strong>Knowledge prerequisite:</strong>
-
-C, device driver, Networking, IP, Ethernet, CARP.
 
 <P><strong>Mentor:</strong>
 TBD
