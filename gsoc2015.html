@@ -87,12 +87,6 @@ organization for Google Summer of Code 2015.
 <HR>
 
 <ul>
-<LI><A href="#capsicum">Port Capsicum to OpenBSD.</A>
-<LI><A href="#centralized-dhclient-daemon">Implement centralized dhclient daemon.</A>
-<LI><A href="#dhcp6-client">Implement dhcp6 client.</A>
-<LI><A href="#dhcp6-server">Implement an OpenBSD style privilege separated dhcp6d server.</A>
-<LI><A href="#dhcp-yacc-parser">Replace dhcpd and dhclient parsing code with yacc parser.</A>
-<LI><A href="#gpt">Implement GPT support.</A>
 <LI><A href="#valgrind">Port Valgrind to OpenBSD.</A>
 <LI><A href="#llvm-sanitizer">Port llvm/clang sanitizer to OpenBSD.</A>
 <LI><A href="#route-aggregration">FIB route aggregation for OpenBGPd.</A>
@@ -106,11 +100,9 @@ organization for Google Summer of Code 2015.
 <LI><A href="#arm-hw-floating-point">Hardware floating point for OpenBSD/armv7.</A>
 <LI><A href="#usb-userland-xfer">Asynchronous USB transfer submission from userland</A>.
 <LI><A href="#sdmmc">Add sdmmc stack to sys/lib/libsa.</A>
-<LI><A href="#systemd">Provide bsd-licenced, os-agnostic, dbus-api 
-compatible systemd-{hostnamed,timedated,localed,logind} replacements.</A>
 <LI><A href="#webkit2">Fix Webkit2 API on *BSD.</A>
 <LI><A href="#webrtc">Proper WebRTC integration in Mozilla.</A>
-<LI><A href="#pipex">Replace existing four PPP implementations with enhanced pipex.</A>
+<LI><A href="#pipex">Replace existing three PPP implementations with enhanced pipex.</A>
 <LI><A href="#bug-tracking">A bug tracking system that integrates with sendbug(1) and doesn't suck
 dead bunnies through bent straws.</A>
 <LI><A href="#ports-modules">Infrastructure for integrating OpenBSD Ports and module
@@ -120,151 +112,14 @@ installation frameworks.</A>
 <LI><A href="#smtpd-milters">Add milters support in smtpd.</A>
 <LI><A href="#seccomp-bpf">Port Linux SECCOMP-bpf sandbox to OpenBSD.</A>
 <LI><A href="#pseudo-drivers">Better integration of pseudo-drivers in the network stack.</A>
-<LI><A href="#dhcpd">Modernize dhcpd daemon to OpenBSD standards.</A>
 <LI><A href="#network-configuration-daemon">Design and implement network configuration daemon.</A>
 <LI><A href="#java">Java 8 on OpenBSD.</A>
-<LI><A href="#rfc4436">Implement the rapid DHCP lease process described in RFC 4436.
 <LI><A href="#bfd">Implement BFD support as described in RFC 5880 and RFC 5881.</A>
 </ul>
 
 <HR>
 
-<LI id="capsicum">
-<strong>Project:</strong>
-
-Port <A HREF="http://www.cl.cam.ac.uk/research/security/capsicum/">Capsicum</A>
-to OpenBSD.
-
-<P><strong>Brief explanation:</strong>
-
-Capsicum is a lightweight capability API for sandboxing and privilege
-separation. This project involves becoming familiar with the existing
-Capsicum API and implementation, porting and/or reimplementing them on
-OpenBSD, and modifying existing OpenBSD applications to make use of Capsicum. 
-
-<P><strong>Expected results:</strong>
-
-Enable OpenBSD applications to use Capsicum for privilege separation. 
-
-<P><strong>Knowledge prerequisite:</strong>
-
-Strong understanding of C and Posix (e.g., file descriptors, processes,
-system calls), attentiveness to security and correctness issues.
-
-<P><strong>Mentor:</strong>
-Matthew Dempsky <A HREF="mailto:matthew@openbsd.org">matthew@openbsd.org</A>, Damien Miller <A HREF="mailto:djm@openbsd.org">djm@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="centralized-dhclient-daemon">
-<strong>Project:</strong>
-
-Implement centralized dhclient daemon.
-
-<P><strong>Brief explanation:</strong>
-
-Systems with multiple network interfaces could greatly benefit from a
-single coordinating dhclient daemon to mediate between the individual
-dhclient processes responsible for a single interface. In particular
-consolidating the routing information and resolv.conf components from
-the dhcp information provided from mulitple interfaces is very
-desirable.
-
-<P><strong>Expected results:</strong>
-
-A daemon integrated into the normal OpenBSD daemon infrastructure that improves
-coordination between individual dhclient processes.
-
-<P><strong>Knowledge prerequisite:</strong> C.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="dhcp6-client">
-<strong>Project:</strong>
-
-Implement dhcp6 client.
-
-<P><strong>Brief explanation:</strong>
-
-OpenBSD currently lacks any dhcp6 client in the base system.
-
-<P><strong>Expected results:</strong>
-
-A working dhcp6 client.
-
-<P><strong>Knowldge prerequisite:</strong>
-
-C.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="dhcp6-server">
-<strong>Project:</strong>
-
-Implement an OpenBSD style privilege separated dhcp6d server.
-
-<P><strong>Brief explanation:</strong>
-
-OpenBSD currently lacks a dhcp6d server in the base system.
-
-<P><strong>Expected results:</strong>
-
-A working dhcp6d server.
-
-<P><strong>Knowledge prerequisite:</strong> C, yacc.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
-Matthieu Herrb <A HREF="mailto:matthieu@openbsd.org">matthieu@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="dhcp-yacc-parser">
-<strong>Project:</strong>
-
-Replace dhcpd and dhclient parsing code with yacc parser.
-
-<P><strong>Brief explanation:</strong>
-
-The base dhcpd and dhclient programs use hand rolled parsing code that was possibly at one time a proper yacc parser. But the code has mutated into a difficult to maintain mess.
-
-<P><strong>Expected results:</strong>
-
-A yacc parser for dhcpd and dhclient.
-
-<P><strong>Knowledge prerequisite:</strong> C, yacc.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="gpt">
-<strong>Project:</strong>
-
-Implement GPT support.
-
-<P><strong>Brief explanation:</strong>
-
-OpenBSD currently lacks any support for GUID Partition Tables.
-
-<P><strong>Expected results:</strong>
-
-A Utility or utilities to partition disks using GPT, and support in at least the OpenBSD amd64 architecture for booting from a GPT partitioned disk. 
-
-<P><strong>Knowledge prerequisite:</strong> C, assembler.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
-<HR></LI>
-
-
+<ul>
 <LI id="valgrind">
 <strong>Project:</strong>
 
@@ -282,8 +137,7 @@ An OpenBSD port of the main Valgrind tools for at least one architecture.
 <P><strong>Knowledge prequisite:</strong> GCC, C, assembler.
 
 <P><strong>Mentor:</strong>
-Marc Espie <A HREF="mailto:espie@openbsd.org">espie@openbsd.org</A>,
-Miod Vallat <A HREF="mailto:miod@openbsd.org">miod@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -304,7 +158,7 @@ An OpenBSD port of the llvm/clang sanitizer for at least one architecture.
 <P><strong>Knowledge prequisite:</strong> llvm/clang, C.
 
 <P><strong>Mentor:</strong>
-Damien Miller <A HREF="mailto:djm@openbsd.org">djm@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -334,7 +188,7 @@ Strong understanding of C, Classless
 Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP).
 
 <P><strong>Mentor:</strong>
-Florian Obser <A HREF="mailto:florian@openbsd.org">florian@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -357,7 +211,7 @@ A working nouveau driver for OpenBSD.
 X, C, KMS, TTM, graphics.
 
 <P><strong>Mentor:</strong>
-Matthieu Herrb <A HREF="mailto:matthieu@openbsd.org">matthieu@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -380,7 +234,7 @@ A working evdev compatible input layer in wscons.
 X, C.
 
 <P><strong>Mentor:</strong>
-Matthieu Herrb <A HREF="mailto:matthieu@openbsd.org">matthieu@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -405,7 +259,7 @@ exploration of exactly what the barriers would be for full integration.
 C, file systems.
 
 <P><strong>Mentor:</strong>
-Bob Beck <A HREF="mailto:beck@openbsd.org">beck@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -428,7 +282,7 @@ A working replacement for the wdc(4) and related components.
 C, device drivers.
 
 <P><strong>Mentor:</strong>
-David Gwynne <A HREF="mailto:dlg@openbsd.org">dlg@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -452,7 +306,7 @@ A working fdt tool chain.
 C, device drivers.
 
 <P><strong>Mentor:</strong>
-David Gwynne <A HREF="mailto:dlg@openbsd.org">dlg@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -475,7 +329,7 @@ Beaglebone Black.
 C, device drivers, ARM.
 
 <P><strong>Mentor:</strong>
-David Gwynne <A HREF="mailto:dlg@openbsd.org">dlg@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -504,8 +358,7 @@ constructs which are deemed unsafe in OpenBSD.
 Strong understanding of C and static analysis.
 
 <P><strong>Mentor:</strong>
-Martynas Venckus <A HREF="mailto:martynas@openbsd.org">martynas@openbsd.org</A>
-
+TBD
 <HR></LI>
 
 
@@ -530,7 +383,7 @@ Hardware floating point support in OpenBSD/armv7 userland.
 Understanding of the ARM architecture and floating point.
 
 <P><strong>Mentor:</strong>
-Martynas Venckus <A HREF="mailto:martynas@openbsd.org">martynas@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -556,7 +409,7 @@ A working interface supporting at least control, bulk and interrupt transfers.
 C, USB, device drivers.
 
 <P><strong>Mentor:</strong>
-Martin Pieuchot <A HREF="mailto:syl@openbsd.org">mpi@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -579,34 +432,7 @@ A working sdmmc stack in sys/lib/libsa.
 C, device drivers, ARM.
 
 <P><strong>Mentor:</strong>
-Sylvestre Gallon <A HREF="mailto:syl@openbsd.org">syl@openbsd.org</A>,
-Miod Vallat <A HREF="mailto:miod@openbsd.org">miod@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="systemd">
-<strong>Project:</strong>
-
-Provide bsd-licenced, os-agnostic, dbus-api 
-compatible systemd-{hostnamed,timedated,localed,logind} replacements.
-
-<P><strong>Brief explanation:</strong>
-
-More and more desktop-level applications now depend
-on apis provided by linux's systemd. We need to have an equivalent to
-keep up with them.
-
-<P><strong>Expected results:</strong>
-
-Working &amp; seamless integration of those components as ports.
-
-<P><strong>Knowledge prerequisite:</strong>
-
-C, D-BUS, perl.
-
-<P><strong>Mentor:</strong>
-Landry Breuil <A HREF="mailto:landry@openbsd.org">landry@openbsd.org</A>,
-Antoine Jacoutot <A HREF="mailto:ajacoutot@openbsd.org">ajacoutot@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -630,8 +456,7 @@ ports-tree, and the same code properly integrated upstream.
 C, IPC.
 
 <P><strong>Mentor:</strong>
-Landry Breuil <A HREF="mailto:landry@openbsd.org">landry@openbsd.org</A>,
-Antoine Jacoutot <A HREF="mailto:ajacoutot@openbsd.org">ajacoutot@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -656,18 +481,18 @@ OpenBSD's ports-tree. Patches properly integrated upstream.
 C, IPC.
 
 <P><strong>Mentor:</strong>
-Landry Breuil <A HREF="mailto:landry@openbsd.org">landry@openbsd.org</A>
+TBD
 <HR></LI>
 
 
 <LI id="pipex">
 <strong>Project:</strong>
 
-Replace existing four PPP implementations with enhanced pipex.
+Replace existing three PPP implementations with enhanced pipex.
 
 <P><strong>Brief explanation:</strong>
 
-Three of the four existing PPP implementation (ppp, pppoe, sppp) should be
+Three of the three existing PPP implementation (ppp, pppoe, sppp) should be
 removed and any functionality from them that is currently missing from pipex
 should be added to pipex.
 
@@ -680,7 +505,7 @@ A pipex implementation that does everything ppp, pppoe and sppp do.
 C, device drivers, PPP.
 
 <P><strong>Mentor:</strong>
-David Gwynne <A HREF="mailto:dlg@openbsd.org">dlg@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -713,8 +538,7 @@ it) would be a resounding success.
 dancing baloney.
 
 <P><strong>Mentor:</strong>
-Bob Beck <A HREF="mailto:beck@openbsd.org">beck@openbsd.org</A>,
-Todd Miller <A HREF="mailto:millert@openbsd.org">millert@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -729,7 +553,7 @@ installation frameworks.
 OpenBSD Ports contain many small ports for Ruby
 gems, CPAN modules and so on. Those ports are mostly simple "wrappers"
 that rely on corresponding port modules. There are a few problems with
-this design: <1) in OpenBSD Ports, it's needed to manually duplicate
+this design: 1) in OpenBSD Ports, it's needed to manually duplicate
 version requirements from upstream package; 2) maintaining a full port
 structure for each small upstream package consumes too much time from
 maintainers.
@@ -774,7 +598,7 @@ you to choose and set up one, and set up and monitor VPNs.
 C, X, networking.
 
 <P><strong>Mentor:</strong>
-Vadim Zhukov <A HREF="mailto:zhuk@openbsd.org">zhuk@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -801,7 +625,7 @@ the latter is not support under OpenBSD, it will be needed to
 implement a driver for it, too).
 
 <P><strong>Mentor:</strong>
-Vadim Zhukov <A HREF="mailto:zhuk@openbsd.org">zhuk@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -829,8 +653,7 @@ slightly our filters framework.
 C, IPC.
 
 <P><strong>Mentor:</strong>
-Gilles Chehade <A HREF="mailto:gilles@openbsd.org">gilles@openbsd.org</A>,
-Eric Faurot <A HREF="mailto:eric@openbsd.org">eric@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -858,7 +681,7 @@ differences between platforms).
 Familiarity with bpf(4), the Linux SECCOMP sandbox and/or the OpenBSD kernel.
 
 <P><strong>Mentor:</strong>
-Damien Miller <A HREF="mailto:djm@openbsd.org">djm@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -885,35 +708,7 @@ of such drivers.
 C, device driver, Networking, IP, Ethernet, CARP.
 
 <P><strong>Mentor:</strong>
-Martin Pieuchot <A HREF="mailto:syl@openbsd.org">mpi@openbsd.org</A>,
-David Gwynne <A HREF="mailto:dlg@openbsd.org">dlg@openbsd.org</A>
-<HR></LI>
-
-
-<LI id="dhcpd">
-<strong>Project:</strong>
-
-Modernize dhcpd daemon to OpenBSD standards.
-
-<P><strong>Brief explanation:</strong>
-
-Enhance the current dhcpd daemon to bring it up to current OpenBSD standards,
-by adding things like socket support for remote clients and a separate
-control program to enable live database and configuration
-reloads. A survey of other dhcpd products to identify and then implement
-missing functionality would be part of the work.
-
-<P><strong>Expected results:</strong>
-
-A working dhcpd daemon with most if not all features of a current
-OpenBSD daemon, with any missing modern dhcp functionality added.
-
-<P><strong>Knowledge prerequisite:</strong>
-
-C, dhcp.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
+TBD
 <HR></LI>
 
 
@@ -941,8 +736,7 @@ with a clear design for further assimilation.
 C, kernal networking interfaces, dhcp.
 
 <P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>,
-Henning Brauer <A HREF="mailto:henning@openbsd.org">henning@openbsd.org</A>
+TBD
 <HR></LI>
  
 
@@ -971,37 +765,9 @@ Strong understanding of C, Java. Access to a fast computer
 running OpenBSD/amd64 and/or OpenBSD/i386.
 
 <P><strong>Mentor:</strong>
-Ian Darwin <A HREF="mailto:ian@openbsd.org">ian@openbsd.org</A>,
-Antoine Jacoutot <A HREF="mailto:ajacoutot@openbsd.org">ajacoutot@openbsd.org</A>,
-Jasper Lievisse Adriaanse <A HREF="mailto:jasper@openbsd.org">jasper@openbsd.org</A>
+TBD
 <HR></LI>
 
-
-<LI id="rfc4436">
-<strong>Project:</strong>
-
-Implement the rapid DHCP lease process described in RFC 4436.
-
-<P><strong>Brief explanation:</strong>
-
-With the demise of dhclient-script, it should now be possible to obtain and
-bind leases far faster than the current norm. Techniques for doing this are
-described in RFC 4436 and already implemented in various OS's. This
-would significantly improve the user experience of resume and moving
-between networks.
-
-<P><strong>Expected results:</strong>
-
-A RFC 4436 compliant dhclient that obtains and binds leases far faster than
-the current code.
-
-<P><strong>Knowledge prerequisite:</strong>
-
-Strong understanding of C, DHCP, networking.
-
-<P><strong>Mentor:</strong>
-Ken Westerback <A HREF="mailto:krw@openbsd.org">krw@openbsd.org</A>
-<HR></LI>
 
 <LI id="bfd">
 <strong>Project:</strong>
@@ -1027,8 +793,7 @@ A working BFD implementation for OpenBSD.
 Strong understanding of  C, Networking.
 
 <P><strong>Mentor:</strong>
-Claudio Jeker <A HREF="mailto:claudio@openbsd.org">claudio@openbsd.org</A>,
-Henning Brauer <A HREF="mailto:henning@openbsd.org">henning@openbsd.org</A>
+TBD
 <HR></LI>
 
 </UL>
