@@ -91,6 +91,8 @@ organization for Google Summer of Code 2015.
 <LI><A href="#network-configuration-daemon">Design and implement network configuration daemon.</A>
 <LI><A href="#bfd">Implement BFD support as described in RFC 5880 and RFC 5881.</A>
 <LI><A href="#nvgre">Add support for the NVGRE protocol.</A>
+<LI><A href="#usb-userland-xfer">Asynchronous USB transfer submission from userland</A>.
+<LI><A href="#webrtc">Proper WebRTC integration in Mozilla.</A>
 </ul>
 
 <HR>
@@ -208,6 +210,56 @@ C, kernel networking interfaces, Ethernet, IP, Windows Server configuration.
 <P><strong>Mentor:</strong>
 Reyk Floeter
 <HR></LI>
+
+<LI id="usb-userland-xfer">
+<strong>Project:</strong>
+
+Asynchronous USB transfer submission from userland.
+
+<P><strong>Brief explanation:</strong>
+
+Extend the existing interface exposed by ugen(4) and
+usb(4) and used mainly though
+<A HREF="http://www.libusb.info">libusb</A>, or
+ design a new one, to
+be able to submit USB transfers asynchronously.
+
+<P><strong>Expected results:</strong>
+
+A working interface supporting at least control, bulk and interrupt transfers.
+
+<P><strong>Knowledge prequisite:</strong>
+
+C, USB, device drivers.
+
+<P><strong>Mentor:</strong>
+Martin Pieuchot
+<HR></LI>
+
+<LI id="webrtc">
+<strong>Project:</strong>
+
+Proper WebRTC integration in Mozilla.
+
+<P><strong>Brief explanation:</strong>
+
+The WebRTC API within Firefox is not yet fully
+functional nor stable on OpenBSD. Sound integration not finished,
+testing coverage very low.
+
+<P><strong>Expected results:</strong>
+
+WebRTC working & enabled by default within Firefox in
+OpenBSD's ports-tree. Patches properly integrated upstream.
+
+<P><strong>Knowledge prerequisite:</strong>
+
+C, IPC.
+
+<P><strong>Mentor:</strong>
+Landry Breuil
+<HR></LI>
+
 </UL>
 
 
