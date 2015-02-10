@@ -105,7 +105,6 @@ installation frameworks.</A>
 <LI><A href="#networkmanager">OS-agnostic NetworkManager analog.</A>
 <LI><A href="#accelerometer">Act on accelerometer input in laptop.</A>
 <LI><A href="#smtpd-milters">Add milters support in smtpd.</A>
-<LI><A href="#seccomp-bpf">Port Linux SECCOMP-bpf sandbox to OpenBSD.</A>
 <LI><A href="#network-configuration-daemon">Design and implement network configuration daemon.</A>
 <LI><A href="#java">Java 8 on OpenBSD.</A>
 <LI><A href="#bfd">Implement BFD support as described in RFC 5880 and RFC 5881.</A>
@@ -542,34 +541,6 @@ slightly our filters framework.
 <P><strong>Knowledge prerequisite:</strong>
 
 C, IPC.
-
-<P><strong>Mentor:</strong>
-TBD
-<HR></LI>
-
-
-<LI id="seccomp-bpf">
-<strong>Project:</strong>
-
-Port Linux SECCOMP-bpf sandbox to OpenBSD.
-
-<P><strong>Brief explanation:</strong>
-
-Linux recently added an API for discretionary sandboxing using
-small programs written in the bpf(4) bytecode format to inspect system
-calls and their arguments. This project would port this API to
-OpenBSD.
-
-<P><strong>Expected results:</strong>
-
-A working port of SECCOMP-bpf that is API compatible with Linux. A
-set of regression tests (written or ported). Successful sandboxing of
-OpenSSH and Chromium using their existing SECCOMP-bpf code (adjusted for
-differences between platforms).
-
-<P><strong>Knowledge prerequisite:</strong>
-
-Familiarity with bpf(4), the Linux SECCOMP sandbox and/or the OpenBSD kernel.
 
 <P><strong>Mentor:</strong>
 TBD
