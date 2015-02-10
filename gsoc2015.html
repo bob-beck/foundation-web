@@ -110,6 +110,7 @@ installation frameworks.</A>
 <LI><A href="#network-configuration-daemon">Design and implement network configuration daemon.</A>
 <LI><A href="#java">Java 8 on OpenBSD.</A>
 <LI><A href="#bfd">Implement BFD support as described in RFC 5880 and RFC 5881.</A>
+<LI><A href="#nvgre">Add support for the NVGRE protocol.</A>
 </ul>
 
 <HR>
@@ -685,6 +686,36 @@ Strong understanding of  C, Networking.
 TBD
 <HR></LI>
 
+<LI id="nvgre">
+<strong>Project:</strong>
+
+Add support for the NVGRE protocol.
+
+<P><strong>Brief explanation:</strong>
+
+Support for virtual overlay networks with the VXLAN
+protocol has been introduced in OpenBSD 5.5 with the vxlan(4) driver.
+An alternative approach is the NVGRE protocol that that is currently
+described in the IETF draft "draft-sridharan-virtualization-nvgre-07".
+It is an extension to the GRE protocol and can be added to OpenBSD's
+gre(4) driver.  It would need support for the GRE key, the NVGRE
+headers, integration into bridge(4) and ifconfig(8) using the same
+interfaces and semantics that have been created for vxlan(4).
+Additional interoperability testing with Microsoft's Windows Server
+2012 or newer would be required.
+
+<P><strong>Expected results:</strong>
+
+A patch for gre(4) to support the GRE key and NVGRE.
+
+<P><strong>Knowledge prerequisite:</strong>
+
+C, kernel networking interfaces, Ethernet, IP, Windows Server configuration.
+
+<P><strong>Mentor:</strong>
+
+Reyk Floeter
+<HR></LI>
 </UL>
 
 
