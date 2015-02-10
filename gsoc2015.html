@@ -94,6 +94,8 @@ organization for Google Summer of Code 2015.
 <LI><A href="#usb-userland-xfer">Asynchronous USB transfer submission from userland</A>.
 <LI><A href="#webrtc">Proper WebRTC integration in Mozilla.</A>
 <LI><A href="#sdmmc">Add sdmmc stack to sys/lib/libsa.</A>
+<LI><A href="#ports-modules">Infrastructure for integrating OpenBSD Ports and module
+<LI><A href="#libressl-struct">Unit Test, Measure and Replace LibreSSL data structures</A>
 </ul>
 
 <HR>
@@ -125,7 +127,7 @@ Strong understanding of C, Classless
 Inter-Domain Routing (CIDR), Border Gateway Protocol (BGP).
 
 <P><strong>Mentor:</strong>
-Henning Brauer
+Henning Brauer, Florian Obser
 <HR></LI>
 
 <LI id="network-configuration-daemon">
@@ -281,6 +283,50 @@ C, device drivers, ARM.
 
 <P><strong>Mentor:</strong>
 Miod Vallat
+<HR></LI>
+
+<LI id="ports-modules">
+<strong>Project:</strong>
+
+Infrastructure for integrating OpenBSD Ports and module
+installation frameworks.
+
+<P><strong>Brief explanation:</strong>
+
+OpenBSD Ports contain many small ports for Ruby
+gems, CPAN modules and so on. Those ports are mostly simple "wrappers"
+that rely on corresponding port modules. There are a few problems with
+this design: 1) in OpenBSD Ports, it's needed to manually duplicate
+version requirements from upstream package; 2) maintaining a full port
+structure for each small upstream package consumes too much time from
+maintainers.
+
+<P><strong>Expected results:</strong>
+
+Fully-automated process of creating and updating
+ports for upstream modules packages.
+
+<P><strong>Knowledge prerequisite:</strong>
+
+C, perl.
+
+<P><strong>Mentor:</strong>
+Vadim Zhukov
+<HR></LI>
+
+<LI id="libressl-struct">
+<strong>Project:</strong>
+
+Unit Test, Measure and Replace LibreSSL data structures
+
+<P><strong>Brief explanation:</strong>
+
+<P><strong>Expected results:</strong>
+
+<P><strong>Knowledge prerequisite:</strong>
+
+<P><strong>Mentor:</strong>
+Bob Beck
 <HR></LI>
 
 </UL>
