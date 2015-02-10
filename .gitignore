@@ -1,0 +1,4 @@
+#Ignore files matching these patterns:
+
+#Emacs/MG backup files..
+*~
