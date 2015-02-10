@@ -93,6 +93,7 @@ organization for Google Summer of Code 2015.
 <LI><A href="#nvgre">Add support for the NVGRE protocol.</A>
 <LI><A href="#usb-userland-xfer">Asynchronous USB transfer submission from userland</A>.
 <LI><A href="#webrtc">Proper WebRTC integration in Mozilla.</A>
+<LI><A href="#sdmmc">Add sdmmc stack to sys/lib/libsa.</A>
 </ul>
 
 <HR>
@@ -258,6 +259,28 @@ C, IPC.
 
 <P><strong>Mentor:</strong>
 Landry Breuil
+<HR></LI>
+
+<LI id="sdmmc">
+<strong>Project:</strong>
+
+Add sdmmc stack to sys/lib/libsa.
+
+<P><strong>Brief explanation:</strong>
+
+One of most problematic missing part for having a working boot block on armv7 is
+that there is no minimal sdmmc stack code in sys/lib/libsa.
+
+<P><strong>Expected results:</strong>
+
+A working sdmmc stack in sys/lib/libsa.
+
+<P><strong>Knowledge prequisite:</strong>
+
+C, device drivers, ARM.
+
+<P><strong>Mentor:</strong>
+Miod Vallat
 <HR></LI>
 
 </UL>
