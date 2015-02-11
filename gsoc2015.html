@@ -321,12 +321,30 @@ Unit Test, Measure and Replace LibreSSL data structures
 
 <P><strong>Brief explanation:</strong>
 
+LibreSSL has inherited a number of files to
+implement basic data structures (e.g. hashing, lists) which are then
+used internally to the library.  The implementation of many of these
+data structures could benefit from review, and possible
+reimplementation to a more safe and efficient standard.
+<P>
+This project would be to write unit tests and measurements to both
+verify the correctness of the internal data structure implementations,
+and measure them for benchmarking purposes. Once that is done an
+effort can be made to selectively re-implement some of these data
+structures - probably in coordination with LibreSSL developers.
+
 <P><strong>Expected results:</strong>
+
+Unit tests and measurements for internal LibreSSL data structures.
 
 <P><strong>Knowledge prerequisite:</strong>
 
+Testing, measurement, a strong background in C
+and data structures - ability for independent research and
+measurement.
+
 <P><strong>Mentor:</strong>
-Bob Beck
+Joel Sing, Bob Beck
 <HR></LI>
 
 </UL>
