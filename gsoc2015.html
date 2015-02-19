@@ -98,6 +98,7 @@ organization for Google Summer of Code 2015.
 <LI><A href="#libressl-struct">Unit Test, Measure and Replace LibreSSL data structures</A>
 <LI><A href="#wscons">Implement a wscons version of libinput.</A>
 <LI><A href="#xenguest">Enable OpenBSD to boot as guest on Xen.</A>
+<LI><A href="#kms">Implement a simple KMS driver to the kernel.</A>
 </ul>
 
 <HR>
@@ -399,6 +400,36 @@ Anil Madhavapeddy
 
 <HR></LI>
 
+<LI id="kms">
+<strong>Project:</strong>
+
+Implement a simple KMS driver to the kernel.
+
+<P><strong>Brief explanation:</strong>
+The X server is moving away from the legacy
+model where drivers had direct access to the hardware to set the
+video modes and handle acceleration. This project is about creating
+more KMS drivers beyond the existing intel and radeon ones. It can
+target a relative simple driver like Cirrus (that's useful for
+people running under Qemu). This would make it possible to use the
+xf86-video-modesettings driver to run X with allowaperture=0 (ie
+without privileges) on these systems.
+
+<P><strong>Expected result:</strong>
+
+An implementation of a kernel KMS driver for one simple
+graphics card, providing the basic graphics mode settings operations
+needed to run X with the xf86-video-modesettings driver.
+
+<P><strong>Knowledge prerequisites:</strong>
+
+C, device drivers. Notions about the X.Org driver architecture.
+
+<P><strong>Mentor:</strong>
+
+Matthieu Herrb
+
+<HR></LI>
 </UL>
 
 
