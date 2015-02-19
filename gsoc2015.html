@@ -97,6 +97,7 @@ organization for Google Summer of Code 2015.
 <LI><A href="#ports-modules">Infrastructure for integrating OpenBSD Ports and module
 <LI><A href="#libressl-struct">Unit Test, Measure and Replace LibreSSL data structures</A>
 <LI><A href="#wscons">Implement a wscons version of libinput.</A>
+<LI><A href="#xenguest">Enable OpenBSD to boot as guest on Xen.</A>
 </ul>
 
 <HR>
@@ -368,6 +369,34 @@ X, C.
 
 <P><strong>Mentor:</strong>
 Matthieu Herrb
+<HR></LI>
+
+<LI id="xenguest">
+
+<strong>Project:</strong>
+
+Xen guest support for OpenBSD
+
+<P><strong>Brief explanation:</strong>
+
+The Xen hypervisor exposes a virtual guest ABI for x86_32, x86_64
+and ARMv7 architectures.  Several portions of this ABI are
+architecture-independent, such as device drivers for the Xen device
+drivers and XenStore. Support can be ported from NetBSD and FreeBSD,
+which have had support for a few years now.
+
+<P><strong>Expected results:</strong>
+
+Boot OpenBSD as an accelerated HVM guest or a native PV guest on Xen.
+
+<P><strong>Knowledge prerequisite:</strong>
+
+Strong understanding of C and/or operating systems.
+
+<P><strong>Mentor:</strong>
+
+Anil Madhavapeddy
+
 <HR></LI>
 
 </UL>
