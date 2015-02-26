@@ -91,14 +91,16 @@ organization for Google Summer of Code 2015.
 <LI><A href="#network-configuration-daemon">Design and implement network configuration daemon.</A>
 <LI><A href="#bfd">Implement BFD support as described in RFC 5880 and RFC 5881.</A>
 <LI><A href="#nvgre">Add support for the NVGRE protocol.</A>
-<LI><A href="#usb-userland-xfer">Asynchronous USB transfer submission from userland</A>.
+<LI><A href="#usb-userland-xfer">Asynchronous USB transfer submission from userland.</A>
 <LI><A href="#webrtc">Proper WebRTC integration in Mozilla.</A>
 <LI><A href="#sdmmc">Add sdmmc stack to sys/lib/libsa.</A>
-<LI><A href="#ports-modules">Infrastructure for integrating OpenBSD Ports and module
-<LI><A href="#libressl-struct">Unit Test, Measure and Replace LibreSSL data structures</A>
+<LI><A href="#ports-modules">Infrastructure for integrating OpenBSD Ports and modules.</A>
+<LI><A href="#libressl-struct">Unit Test, Measure and Replace LibreSSL data structures.</A>
 <LI><A href="#wscons">Implement a wscons version of libinput.</A>
 <LI><A href="#xenguest">Enable OpenBSD to boot as guest on Xen.</A>
 <LI><A href="#kms">Implement a simple KMS driver to the kernel.</A>
+<LI><A href="#usb-dump">Implement a tool to dump USB device descriptors.</A>
+<LI><A href="#usb-xhci">Implement xHCI isochronous transfer support.</A>
 </ul>
 
 <HR>
@@ -449,6 +451,58 @@ C, device drivers. Notions about the X.Org driver architecture.
 Matthieu Herrb <A HREF="mailto:mattieu@herrb.eu">matthieu@herrb.eu</A>
 
 <HR></LI>
+
+<LI id="usb-dump">
+<strong>Project:</strong>
+
+Implement a tool to dump USB device descriptors.
+
+<P><strong>Brief explanation:</strong>
+Extend usbdevs(8) or write a new tool to dump the device
+descriptors of connected USB devices, something like "lsusb -v".
+
+<P><strong>Expected result:</strong>
+
+A working tool able to at least dump Device,
+Configuration, Interface and Endpoint descriptors.
+
+<P><strong>Knowledge prerequisites:</strong>
+
+C, USB, ioctls.
+
+<P><strong>Mentor:</strong>
+
+Martin Pieuchot <A HREF="mailto:mpi@openbsd.org">mpi@openbsd.org</A>
+
+<HR></LI>
+
+<LI id=usb-xhci>
+<strong>Project:</strong>
+
+Implement xHCI isochronous transfer support.
+
+<P><strong>Brief explanation:</strong>
+
+xhci(4) can currently submit control, bulk and interrupt
+transfers.
+Supporting isochronous transfers would make it possible to use
+devices like uvideo(4) or uaudio(4) behind it.
+
+<P><strong>Expected result:</strong>
+
+A patch for xhci(4), and if necessary to the USB stack, to
+support isochronous transfers.
+
+<P><strong>Knowledge prerequisites:</strong>
+
+C, USB, xHCI, device drivers.
+
+<P><strong>Mentor:</strong>
+
+Martin Pieuchot <A HREF="mailto:mpi@openbsd.org">mpi@openbsd.org</A>
+
+<HR></LI>
+
 </UL>
 
 
