@@ -1,2 +1,2 @@
-# foundation-web
-Foundation Web Pages
+# OpenBSD Foundation web
+Foundation Web site: https://www.openbsdfoundation.org
